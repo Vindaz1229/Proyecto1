@@ -23,10 +23,13 @@ public class Application {
         Proyecto.Graphics.MainTabbedPane.Model mainModel  = new Proyecto.Graphics.MainTabbedPane.Model();
         mainController = new Proyecto.Graphics.MainTabbedPane.Controller(mainView, mainModel);
 
+        Proyecto.Graphics.Empleado.View empleadoView = new Proyecto.Graphics.Empleado.View();
 
         mainView.getTabbedPane().add("Empleados", empleadosView.getPanel());
         mainView.getTabbedPane().add("Sucursales",new JPanel());
         mainView.getTabbedPane().add("Acerca De",new JPanel());
+        //Para probar diseño
+        mainView.getTabbedPane().add("Empleado", empleadoView.getPanel());
 
         window = new JFrame();
         window.setSize(400,300);

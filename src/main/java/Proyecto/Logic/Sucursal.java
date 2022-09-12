@@ -13,4 +13,36 @@ public class Sucursal {
         this.porcentajeZonaje = porcentajeZonaje;
         this.coordenada = coordenada;
     }
+
+    public String getReferencia() {
+        return referencia;
+    }
+
+    public void setReferencia(String referencia) {
+        this.referencia = referencia;
+    }
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
+
+    public double getPorcentajeZonaje() {
+        return porcentajeZonaje;
+    }
+
+    public void setPorcentajeZonaje(double porcentajeZonaje) {
+        this.porcentajeZonaje = porcentajeZonaje;
+    }
+
+    public Coordenada getCoordenada() {
+        return coordenada;
+    }
+
+    public void setCoordenada(Coordenada coordenada) {
+        this.coordenada = coordenada;
+    }
 }
