@@ -40,17 +40,22 @@ public class TableModel extends AbstractTableModel{
         switch (cols[columnIndex]){
             case CEDULA: return empleado.getCedula();
             case NOMBRE: return empleado.getNombre();
+            case TELEFONO: return empleado.getTelefono();
+            case SALARIO: return empleado.getSalario();
+            case SUCURSAL: return empleado.getSucursal();
             default: return "";
         }
     }
     public static final int CEDULA = 0;
     public static final int NOMBRE = 1;
     public static final int TELEFONO = 2;
-    public static final int SUCURSAL = 3;
-    String [] colNames = new String [4];
+    public static final int SALARIO = 3;
+    public static final int SUCURSAL = 4;
+    String [] colNames = new String [5];
     private void initColNames(){
         colNames[CEDULA] = "Cedula";
         colNames[NOMBRE] = "Nombre";
+        colNames[SALARIO] = "Salario";
         colNames[TELEFONO] = "Telefono";
         colNames[SUCURSAL] = "Sucursal";
     }

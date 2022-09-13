@@ -1,5 +1,6 @@
 package Proyecto.Graphics.Empleados;
 
+import Proyecto.Graphics.Empleado.Controller;
 import Proyecto.Logic.Empleado;
 
 import java.util.ArrayList;

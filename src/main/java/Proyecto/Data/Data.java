@@ -11,9 +11,9 @@ public class Data {
     public Data() {
         empleados = new ArrayList<>();
 
-        empleados.add(new Empleado("111", "Franklin Chang",0,null));
-        empleados.add(new Empleado("222", "Sandra Cauffman",0,null));
-        empleados.add(new Empleado("333", "Ivan Vargas",0,null));
+        empleados.add(new Empleado("111", "Franklin Chang",0,0.0,null));
+        empleados.add(new Empleado("222", "Sandra Cauffman",0,0.0,null));
+        empleados.add(new Empleado("333", "Ivan Vargas",0,0.0,null));
 
         System.out.println("I'm here!");
 

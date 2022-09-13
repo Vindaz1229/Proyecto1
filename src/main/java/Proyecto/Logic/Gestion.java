@@ -17,7 +17,26 @@ public class Gestion {
     }
     private Gestion (){ data = new Data(); }
 
+    public Data getData() {
+        return data;
+    }
+
     public List<Empleado> empleadosSearch(String filtro){
         return data.getEmpleados().stream().filter(e->e.getNombre().contains(filtro)).collect(Collectors.toList());
+    }
+    public Empleado crearEmpleado(String cedula, String nombre, int telefono, Double salario, Sucursal sucursal){
+        System.out.println("I'm here x2");
+        return new Empleado(cedula,nombre,telefono,salario,null);
+    }
+    public void remove(String cedula){
+        data.getEmpleados().remove(getEmpleadoFromTable(cedula));
+    }
+    public Empleado getEmpleadoFromTable(String cedula){
+        for (Empleado emp : data.getEmpleados()){
+            if(emp.getCedula().equals(cedula)){
+                return emp;
+            }
+        }
+        return null;
     }
 }
